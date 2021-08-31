@@ -1,5 +1,5 @@
 ---
-- hosts: idrac
+- hosts: r440
   connection: local
   name: Update Firmware Inventory
   gather_facts: False
