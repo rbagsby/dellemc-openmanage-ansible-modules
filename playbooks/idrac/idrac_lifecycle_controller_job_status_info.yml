@@ -10,7 +10,7 @@
   tasks:
   - name: Get LC job Status
     idrac_lifecycle_controller_job_status_info:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        job_id: "JID_844222910040"

@@ -10,7 +10,7 @@
   tasks:
   - name: Update firmware from repository on a HTTP/HTTP/FTP repository
     idrac_firmware:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password}}"
        share_name: "https://downloads.dell.com"
@@ -20,7 +20,7 @@
 
   - name: Update firmware from repository on a internally hosted HTTP repository.
     idrac_firmware:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password}}"
        share_name: "http://192.168.0.1/path_to_folder/"
@@ -31,7 +31,7 @@
 
   - name: Update firmware from repository on a NFS Share
     idrac_firmware:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password}}"
        share_name: "192.168.0.1:/complete_share_path"
@@ -42,7 +42,7 @@
 
   - name: Update firmware from repository on a CIFS Share
     idrac_firmware:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password}}"
        share_name: "\\\\192.168.0.1\\share_path"
@@ -55,7 +55,7 @@
 
   - name: Firmware compliance report using HTTPS repository.
     idrac_firmare:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password }}"
        share_name: "https://downloads.dell.com"

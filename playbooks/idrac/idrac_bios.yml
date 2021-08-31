@@ -10,7 +10,7 @@
   tasks:
   - name: Configure Bios Generic Attributes
     idrac_bios:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password }}"
        attributes:
@@ -22,7 +22,7 @@
  
   - name: Configure PXE Generic Attributes
     idrac_bios:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        attributes:
@@ -37,7 +37,7 @@
  
   - name: Configure Boot Sources
     idrac_bios:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        boot_sources:
@@ -52,7 +52,7 @@
 
   - name: Configure Boot Sources - Enabled
     idrac_bios:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        boot_sources:
@@ -63,7 +63,7 @@
 
   - name: Configure Boot Sources - Index
     idrac_bios:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        boot_sources:

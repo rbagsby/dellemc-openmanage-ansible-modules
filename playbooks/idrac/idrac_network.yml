@@ -24,7 +24,7 @@
 
   - name: Setup VLAN attributes
     idrac_network:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"
@@ -35,7 +35,7 @@
 
   - name: Setup iDRAC NIC
     idrac_network:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"
@@ -52,7 +52,7 @@
 
   - name: Setup iDRAC IPv4
     idrac_network:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"
@@ -65,7 +65,7 @@
 
   - name: Setup iDRAC Static IPv4
     idrac_network:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"

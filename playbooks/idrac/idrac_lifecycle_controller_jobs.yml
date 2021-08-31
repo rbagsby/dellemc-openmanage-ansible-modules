@@ -10,7 +10,7 @@
   tasks:
   - name: Delete LC job Queue
     idrac_lifecycle_controller_jobs:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
     tags:
@@ -18,7 +18,7 @@
 
   - name: Delete a LC job
     idrac_lifecycle_controller_jobs:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        job_id: "JID_123456789"

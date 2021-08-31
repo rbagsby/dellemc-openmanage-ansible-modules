@@ -10,7 +10,7 @@
   tasks:
   - name: Configure iDRAC CSIOR Setting
     dellemc_idrac_lc_attributes:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"

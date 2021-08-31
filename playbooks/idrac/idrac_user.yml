@@ -10,7 +10,7 @@
   tasks:
   - name: Configure the create iDRAC users attributes
     idrac_user:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password }}"
        state: "present"
@@ -29,7 +29,7 @@
 
   - name: Configure the modify iDRAC users attributes
     idrac_user:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password }}"
        action: "present"
@@ -48,7 +48,7 @@
 
   - name: Configure the modify iDRAC username and password attributes.
     idrac_user:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password }}"
        action: "present"
@@ -60,7 +60,7 @@
 
   - name: Configure the delete iDRAC users attributes
     idrac_user:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password }}"
        state: "absent"

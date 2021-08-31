@@ -10,7 +10,7 @@
   tasks: 
     - name: "Booting to Network Operating System image"
       idrac_os_deployment:
-        idrac_ip: "{{ idrac_ip }}"
+        idrac_ip: 192.168.0.46
         idrac_password: "{{ idrac_password }}"
         idrac_user: "{{ idrac_user }}"
         share_name: "{{ playbook_dir }}"

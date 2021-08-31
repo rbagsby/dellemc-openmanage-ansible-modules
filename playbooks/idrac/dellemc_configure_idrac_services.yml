@@ -10,7 +10,7 @@
   tasks:
   - name: Setup iDRAC Webserver
     dellemc_configure_idrac_services:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"
@@ -22,7 +22,7 @@
 
   - name: Setup iDRAC SNMP
     dellemc_configure_idrac_services:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"
@@ -34,7 +34,7 @@
 
   - name: Setup iDRAC SNMP settings
     dellemc_configure_idrac_services:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password:  "{{ idrac_password }}"
       share_name: "{{ playbook_dir }}"

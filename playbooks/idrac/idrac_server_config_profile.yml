@@ -11,7 +11,7 @@
 
   - name: Export SCP with IDRAC components in JSON format to a local path
     dellemc.openmanage.idrac_server_config_profile:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password: "{{ idrac_password }}"
       share_name: "/scp_folder"
@@ -24,7 +24,7 @@
 
   - name: Import SCP with IDRAC components in JSON format from a local path
     dellemc.openmanage.idrac_server_config_profile:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password: "{{ idrac_password }}"
       share_name: "/scp_folder"
@@ -38,7 +38,7 @@
 
   - name: Export SCP with BIOS components in XML format to a NFS share path with auto-generated file name
     dellemc.openmanage.idrac_server_config_profile:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password: "{{ idrac_password }}"
       share_name: "192.168.0.2:/share"
@@ -50,7 +50,7 @@
 
   - name: Import SCP with BIOS components in XML format from a NFS share path
     dellemc.openmanage.idrac_server_config_profile:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password: "{{ idrac_password }}"
       share_name: "192.168.0.2:/share"
@@ -64,7 +64,7 @@
 
   - name: Export SCP with RAID components in XML format to a CIFS share path with share user domain name
     dellemc.openmanage.idrac_server_config_profile:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password: "{{ idrac_password }}"
       share_name: "\\\\192.168.0.2\\share"
@@ -80,7 +80,7 @@
 
   - name: Import SCP with RAID components in XML format from a CIFS share path
     dellemc.openmanage.idrac_server_config_profile:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password: "{{ idrac_password }}"
       share_name: "\\\\192.168.0.2\\share"
@@ -97,7 +97,7 @@
 
   - name: Export SCP with ALL components in JSON format to a HTTP share path
     dellemc.openmanage.idrac_server_config_profile:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password: "{{ idrac_password }}"
       share_name: "http://192.168.0.3/share"
@@ -111,7 +111,7 @@
 
   - name: Import SCP with ALL components in JSON format from a HTTP share path
     dellemc.openmanage.idrac_server_config_profile:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password: "{{ idrac_password }}"
       command: import
@@ -126,7 +126,7 @@
 
   - name: Export SCP with ALL components in XML format to a HTTPS share path without SCP file name
     dellemc.openmanage.idrac_server_config_profile:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password: "{{ idrac_password }}"
       share_name: "https://192.168.0.4/share"
@@ -140,7 +140,7 @@
 
   - name: Import SCP with ALL components in XML format from a HTTPS share path
     dellemc.openmanage.idrac_server_config_profile:
-      idrac_ip: "{{ idrac_ip }}"
+      idrac_ip: 192.168.0.46
       idrac_user: "{{ idrac_user }}"
       idrac_password: "{{ idrac_password }}"
       command: import

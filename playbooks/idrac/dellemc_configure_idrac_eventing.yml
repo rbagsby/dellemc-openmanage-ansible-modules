@@ -10,7 +10,7 @@
   tasks:
   - name: Setup iDRAC SMTP
     dellemc_configure_idrac_eventing:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   "192.168.0.46"
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"
@@ -24,7 +24,7 @@
 
   - name: Setup iDRAC SNMP Trap
     dellemc_configure_idrac_eventing:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"
@@ -38,7 +38,7 @@
 
   - name: Setup iDRAC Email Alerts
     dellemc_configure_idrac_eventing:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"
@@ -52,7 +52,7 @@
 
   - name: Setup iDRAC Alerts
     dellemc_configure_idrac_eventing:
-       idrac_ip:   "{{ idrac_ip }}"
+       idrac_ip:   192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password:  "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"

@@ -10,7 +10,7 @@
   tasks:
   - name: Export Lifecycle Controller Logs
     idrac_lifecycle_controller_logs:
-       idrac_ip: "{{ idrac_ip }}"
+       idrac_ip: 192.168.0.46
        idrac_user: "{{ idrac_user }}"
        idrac_password: "{{ idrac_password }}"
        share_name: "{{ playbook_dir }}"
